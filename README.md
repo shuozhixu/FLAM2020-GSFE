@@ -1,10 +1,10 @@
 # GSFE curves
 
-Here, we calculate the generalized stacking fault energy (GSFE) curves on {110}, {112}, {123} planes in CrNbTaW and CrMoNbTa. Since there are three types of planes and two HEAs, you need to prepare six directories on your own computer and on Pod, respectively.
+Here, we calculate the generalized stacking fault energy (GSFE) curves on {110}, {112}, {123} planes in CrNbTaW and CrMoNbTa. Since there are three types of planes and two HEAs, you need to prepare six directories on your local computer and on Pod, respectively.
 
 ## {110} GSFE curves in CrNbTaW
 
-Take the {110} GSFE curve in CrNbTaW as an example. First, on your own computer, download the five files in CrMoNbTa/110/ from this github repository to a local directory `CrMoNbTa/110`. These five files are
+Take the {110} GSFE curve in CrNbTaW as an example. First, on your local computer, download the five files in CrMoNbTa/110/ from this github repository to a local directory `CrMoNbTa/110`. These five files are
 
 - `lmp_gsfe.batch`, which is for job submission
 - `110-gsfe.lmp`, which is the LAMMPS data file
@@ -52,7 +52,7 @@ Repeat the steps above 18 times. Each time, change at least one random seed befo
 
 ## {112} and {123} GSFE curves in CrNbTaW
 
-Repeat the steps above to get 20 {112} and 20 {123} GSFE curves in CrNbTaW. Again, calculate mean and standard deviation of:
+Repeat the steps above to get 20 {112} and 20 {123} GSFE curves in CrNbTaW. Instead of the `CrNbTaW/110` directory, you will need the files in `CrNbTaW/112` and `CrNbTaW/123` directories. Again, calculate mean and standard deviation of:
 
 - 20 {112} USFE
 - 20 {112} _T_<sub>is</sub>
@@ -61,7 +61,7 @@ Repeat the steps above to get 20 {112} and 20 {123} GSFE curves in CrNbTaW. Agai
 
 ## GSFE curves in CrMoNbTa
 
-Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in CrMoNbTa. Obtain the mean and standard devitaion of USFE and _T_<sub>is</sub>. Note: when calculating _T_<sub>is</sub>, use the new lattice parameter: 0.31647 nm.
+Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in CrMoNbTa. Go to the three subdirectories under `CrMoNbTa`. Obtain the mean and standard devitaion of USFE and _T_<sub>is</sub>. Note: when calculating _T_<sub>is</sub>, use the lattice parameter for this material: 0.31647 nm.
 
 ## Results
 
