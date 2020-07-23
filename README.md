@@ -48,7 +48,7 @@ So far you have obtained one {110} GSFE curve, but for HEAs, multiple GSFE curve
 
 Then resubmit the job. Once it is finished, run `gsfe_curve.sh`, you will get another GSFE curfve in a file `gsfe`. Save it to your local computer. Note: do not overwrite the previous `gsfe` file. Again, calculate USFE and _T_<sub>is</sub>.
 
-Repeat the steps above 18 times. Each time, change at least one random seed before you resubmit the job. Eventually, you will get 20 {110} GSFE curves, 20 USFE values, and 20 _T_<sub>is</sub> values. Calculate the mean and standard deviation of the 20 USFE values, as well as those of the 20 _T_<sub>is</sub> values.
+Repeat the steps above 18 more times. Each time, change at least one random seed before you resubmit the job. Eventually, you will get 20 {110} GSFE curves, which would give you 20 USFE values, and 20 _T_<sub>is</sub> values. Calculate the mean and standard deviation of the 20 USFE values, as well as those of the 20 _T_<sub>is</sub> values. The mean should be close to the USFE of based on the _A_ atom potential, which is the peak GSFE value in the file CrMoNbTa/110/gsfe\_A in this github repository.
 
 ## {112} and {123} GSFE curves in CrNbTaW
 
@@ -59,9 +59,14 @@ Repeat the steps above to get 20 {112} and 20 {123} GSFE curves in CrNbTaW. Inst
 - 20 {123} USFE
 - 20 {123} _T_<sub>is</sub>
 
+Note: the two mean USFEs should be close to the peak GSFE values in the files CrMoNbTa/112/gsfe\_A and CrMoNbTa/123/gsfe\_A, respectively.
+
 ## GSFE curves in CrMoNbTa
 
-Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in CrMoNbTa. Go to the three subdirectories under `CrMoNbTa`. Obtain the mean and standard devitaion of USFE and _T_<sub>is</sub>. Note: when calculating _T_<sub>is</sub>, use the lattice parameter for this material: 0.31746 nm.
+Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in CrMoNbTa. Go to the three subdirectories under `CrMoNbTa`. Obtain the mean and standard devitaion of USFE and _T_<sub>is</sub>. Note:
+
+- When calculating _T_<sub>is</sub>, use the lattice parameter for this material: 0.31746 nm.
+- Again, compare the mean USFE with the peak GSFE value in respective file gsfe\_A.
 
 ## Results
 
