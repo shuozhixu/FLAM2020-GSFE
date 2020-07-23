@@ -40,7 +40,7 @@ then hit Return. Once the job is finished successfully, you will find a lot of f
 
 then hit Return. You will find a new file called `gsfe`. The first and second columns of this file, respectively, are the _x_ and _y_ axes of the GSFE curve.
 
-Download `gsfe` to your local computer. Calculate the peak GSFE value, which is the unstable stacking fault energy (USFE). Also, calculate the ideal shear strength _T_<sub>is</sub> using Equations 7 and 8 of [this paper](http://dx.doi.org/10.1016/j.jmps.2020.104017). Note that _d<sub>z</sub>_ is in units of the magnitude of the Burgers vector _b_, which can be derived from the lattice parameter: 0.31779 nm.
+Download `gsfe` to your local computer. Calculate the peak GSFE value, which is the unstable stacking fault energy (USFE). Also, calculate the ideal shear strength _T_<sub>is</sub> using Equations 7 and 8 of [this paper](http://dx.doi.org/10.1016/j.jmps.2020.104017). Note that _d<sub>z</sub>_ is in units of the magnitude of the Burgers vector _b_, which can be derived from the lattice parameter: 0.31878 nm.
 
 ### More {110} GSFE curves in CrNbTaW
 
@@ -61,7 +61,7 @@ Repeat the steps above to get 20 {112} and 20 {123} GSFE curves in CrNbTaW. Inst
 
 ## GSFE curves in CrMoNbTa
 
-Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in CrMoNbTa. Go to the three subdirectories under `CrMoNbTa`. Obtain the mean and standard devitaion of USFE and _T_<sub>is</sub>. Note: when calculating _T_<sub>is</sub>, use the lattice parameter for this material: 0.31647 nm.
+Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in CrMoNbTa. Go to the three subdirectories under `CrMoNbTa`. Obtain the mean and standard devitaion of USFE and _T_<sub>is</sub>. Note: when calculating _T_<sub>is</sub>, use the lattice parameter for this material: 0.31746 nm.
 
 ## Results
 
