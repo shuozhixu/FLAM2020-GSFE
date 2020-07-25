@@ -1,6 +1,6 @@
 # GSFE curves
 
-Here, we calculate the generalized stacking fault energy (GSFE) curves on {110}, {112}, {123} planes in CrMoNbTa and CrNbTaW. Since there are three types of planes and two HEAs, you need to prepare six directories on your local computer and on Pod, respectively.
+Here, we calculate the generalized stacking fault energy (GSFE) curves on {110}, {112}, and {123} planes in CrMoNbTa, CrNbTaW, and MoNbTaW. Since there are three types of planes and three HEAs, you need to prepare nine directories on your local computer and on Pod, respectively.
 
 ## {110} GSFE curves in CrMoNbTa
 
@@ -68,6 +68,13 @@ Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in Cr
 - When calculating _T_<sub>is</sub>, use the lattice parameter for this material: 0.31746 nm.
 - Again, compare the mean USFE with the peak GSFE value in respective file gsfe\_A.
 
+## GSFE curves in MoNbTaW
+
+Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in MoNbTaW. Go to the three subdirectories under MoNbTaW/ in this github repository. Obtain the mean and standard devitaion of USFE and _T_<sub>is</sub>. Note:
+
+- When calculating _T_<sub>is</sub>, use the lattice parameter for this material: 0.32208 nm.
+- Again, compare the mean USFE with the peak GSFE value in respective file gsfe\_A.
+
 ## Results
 
-Eventually, you will have 20 x 3 x 2 = 120 different GSFE curves. You will also have 3 x 2 = 6 different mean and standard deviation of USFE, and those of _T_<sub>is</sub>.
+Eventually, you will have 20 x 3 x 3 = 180 different GSFE curves. You will also have 3 x 3 = 9 different mean and standard deviation of USFE, and those of _T_<sub>is</sub>.
