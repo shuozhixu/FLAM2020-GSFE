@@ -23,7 +23,7 @@ Then on Pod, create a new directory in your `$HOME`. Say the directory is also `
 
 `cd 110`
 
-Then upload, via Filezilla, the five files from your local computer to `110` on Pod.
+Then upload, via Filezilla, the six files from your local computer to `110` on Pod.
 
 ### One {110} GSFE curve in CrMoNbTa
 
@@ -41,7 +41,7 @@ then hit Return. Once the job is finished successfully, you will find a lot of f
 
 then hit Return. You will find a new file called `gsfe`. The first and second columns of this file, respectively, are the _x_ and _y_ axes of the GSFE curve.
 
-Download `gsfe` to your local computer. Run `usfe_iss.m` on MATLAB to calculate the USFE and ideal shear strength _T_<sub>is</sub>. For more on these two quantities, read Section 3.2 of [this paper](http://dx.doi.org/10.1016/j.jmps.2020.104017).
+Download `gsfe` to your local computer. Run `usfe_iss.m` in MATLAB to calculate the USFE and ideal shear strength _T_<sub>is</sub>. For more on these two quantities, read Section 3.2 of [this paper](http://dx.doi.org/10.1016/j.jmps.2020.104017).
 
 ### More {110} GSFE curves in CrMoNbTa
 
