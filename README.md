@@ -4,13 +4,14 @@ Here, we calculate the generalized stacking fault energy (GSFE) curves on {110},
 
 ## {110} GSFE curves in CrMoNbTa
 
-Take the {110} GSFE curve in CrMoNbTa as an example. First, on your local computer, download the five files in CrMoNbTa/110/ from this github repository to a local directory `CrMoNbTa/110`. These five files are
+Take the {110} GSFE curve in CrMoNbTa as an example. First, on your local computer, download the six files in CrMoNbTa/110/ from this github repository to a local directory `CrMoNbTa/110`. These six files are
 
 - `lmp_gsfe.batch`, which is for job submission
 - `110-gsfe.lmp`, which is the LAMMPS data file
 - `lmp_gsfe_110.in`, which is the LAMMPS input file
 - `MoTaWNbCr_Zhou04.eam.alloy`, which is an interatomic potential file developed by Wu-Rong Jian
 - `gsfe_curve.sh`, which is the post-processing bash script
+- `usfe_iss.m`, which is the MATLAB code used for calculating the unstable stacking fault energy (USFE) and ideal shear strength
 
 Then on Pod, create a new directory in your `$HOME`. Say the directory is also `CrMoNbTa/110`. The commands are
 
@@ -40,7 +41,7 @@ then hit Return. Once the job is finished successfully, you will find a lot of f
 
 then hit Return. You will find a new file called `gsfe`. The first and second columns of this file, respectively, are the _x_ and _y_ axes of the GSFE curve.
 
-Download `gsfe` to your local computer. Calculate the peak GSFE value, which is the unstable stacking fault energy (USFE). Also, calculate the ideal shear strength _T_<sub>is</sub> using Equations 7 and 8 of [this paper](http://dx.doi.org/10.1016/j.jmps.2020.104017). Note that _d<sub>z</sub>_ is in units of the magnitude of the Burgers vector _b_, which can be derived from the lattice parameter: 0.31878 nm.
+Download `gsfe` to your local computer. Run `usfe_iss.m` on MATLAB to calculate the USFE and ideal shear strength _T_<sub>is</sub>. For more on these two quantities, read Section 3.2 of [this paper](http://dx.doi.org/10.1016/j.jmps.2020.104017).
 
 ### More {110} GSFE curves in CrMoNbTa
 
@@ -63,17 +64,11 @@ Note: the two mean USFEs should be close to the peak GSFE values in the files Cr
 
 ## GSFE curves in CrNbTaW
 
-Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in CrNbTaW. Go to the three subdirectories under CrNbTaW/ in this github repository. Obtain the mean and standard devitaion of USFE and _T_<sub>is</sub>. Note:
-
-- When calculating _T_<sub>is</sub>, use the lattice parameter for this material: 0.31746 nm.
-- Again, compare the mean USFE with the peak GSFE value in respective file gsfe\_A.
+Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in CrNbTaW. Go to the three subdirectories under CrNbTaW/ in this github repository. Obtain the mean and standard devitaion of USFE and _T_<sub>is</sub>. Again, compare the mean USFE with the peak GSFE value in respective file gsfe\_A.
 
 ## GSFE curves in MoNbTaW
 
-Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in MoNbTaW. Go to the three subdirectories under MoNbTaW/ in this github repository. Obtain the mean and standard devitaion of USFE and _T_<sub>is</sub>. Note:
-
-- When calculating _T_<sub>is</sub>, use the lattice parameter for this material: 0.32208 nm.
-- Again, compare the mean USFE with the peak GSFE value in respective file gsfe\_A.
+Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in MoNbTaW. Go to the three subdirectories under MoNbTaW/ in this github repository. Obtain the mean and standard devitaion of USFE and _T_<sub>is</sub>. Again, compare the mean USFE with the peak GSFE value in respective file gsfe\_A.
 
 ## Results
 
