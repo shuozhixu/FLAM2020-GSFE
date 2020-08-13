@@ -70,6 +70,8 @@ Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in Cr
 
 Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in MoNbTaV. Go to the three subdirectories under MoNbTaV/ in this github repository. Obtain the mean and standard devitaion of USFE and _T_<sub>is</sub>. Again, compare the mean USFE with the peak GSFE value in respective file gsfe\_A.
 
+Note: the interatomic potential file for this HEA is different from that for the other three HEAs.
+
 ## GSFE curves in MoNbTaW
 
 Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in MoNbTaW. Go to the three subdirectories under MoNbTaW/ in this github repository. Obtain the mean and standard devitaion of USFE and _T_<sub>is</sub>. Again, compare the mean USFE with the peak GSFE value in respective file gsfe\_A.
