@@ -9,7 +9,7 @@ Take the {110} GSFE curve in CrMoNbTa as an example. First, on your local comput
 - `lmp_gsfe.batch`, which is for job submission
 - `110-gsfe.lmp`, which is the LAMMPS data file
 - `lmp_gsfe_110.in`, which is the LAMMPS input file
-- `MoTaWNbCr_Zhou04.eam.alloy`, which is an interatomic potential file developed by Wu-Rong Jian
+- `CrMoNbTaVW_Xu2022.eam.alloy`, which is an interatomic potential file developed by [Xu et al.](http://dx.doi.org/10.1016/j.commatsci.2021.110942)
 - `gsfe_curve.sh`, which is the post-processing bash script
 - `usfe_iss.m`, which is the MATLAB code used for calculating the unstable stacking fault energy (USFE) and ideal shear strength
 
@@ -80,8 +80,13 @@ Repeat the steps above to get 20 {110}, 20 {112}, and 20 {123} GSFE curves in Mo
 
 Eventually, you will have 20 x 3 x 4 = 240 different GSFE curves. You will also have 3 x 4 = 12 different mean and standard deviation of USFE, and those of _T_<sub>is</sub>.
 
-## Reference
+## References
 
-If you use any file from this GitHub repository, please cite
+If you use the interatomic potential file from this GitHub repository, please cite
 
+- Shuozhi Xu, Saeed Zare Chavoshi, Yanqing Su, [On calculations of basic structural parameters in multi-principal element alloys using small atomistic models](http://dx.doi.org/10.1016/j.commatsci.2021.110942), Comput. Mater. Sci. 202 (2022) 110942
+
+If you use any other file from this GitHub repository, please also cite
+
+- Rebecca A. Romero, Shuozhi Xu, Wu-Rong Jian, Irene J. Beyerlein, C.V. Ramana, Atomistic calculations of the local slip resistances in four refractory multi-principal element alloys, Int. J. Plast. (in press)
 - Shuozhi Xu, Emily Hwang, Wu-Rong Jian, Yanqing Su, Irene J. Beyerlein, [Atomistic calculations of the generalized stacking fault energies in two refractory multi-principal element alloys](http://dx.doi.org/10.1016/j.intermet.2020.106844), Intermetallics 124 (2020) 106844
