@@ -9,7 +9,7 @@ Take the {110} GSFE curve in CrMoNbTa as an example. First, on your local comput
 - `lmp_gsfe.batch`, which is for job submission
 - `110-gsfe.lmp`, which is the LAMMPS data file
 - `lmp_gsfe_110.in`, which is the LAMMPS input file
-- `CrMoNbTaVW_Xu2022.eam.alloy`, which is an interatomic potential file developed by [Xu et al.](http://dx.doi.org/10.1016/j.commatsci.2021.110942)
+- `CrMoNbTaVW_Xu2022.eam.alloy`, which is an interatomic potential file made by [Xu et al.](http://dx.doi.org/10.1016/j.commatsci.2021.110942)
 - `gsfe_curve.sh`, which is the post-processing bash script
 - `usfe_iss.m`, which is the MATLAB code used for calculating the unstable stacking fault energy (USFE) and ideal shear strength
 
